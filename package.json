@@ -1,0 +1,32 @@
+{
+  "name": "typescript_jquery",
+  "version": "1.0.0",
+  "description": "Typescript project setup to work with jQuery.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"webpack-dev-server\" \"npm run build-less:dev\"",
+    "build-less:dev": "less-watch-compiler src src"
+  },
+  "keywords": [
+    "jQuery",
+    "typescript",
+    "ts",
+    "jq",
+    "less"
+  ],
+  "author": "David C Zemina",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jquery": "^3.3.6",
+    "concurrently": "^4.0.1",
+    "jquery": "^3.3.1",
+    "less": "^3.8.1",
+    "less-watch-compiler": "^1.11.3",
+    "ts-loader": "^4.5.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
